@@ -34,12 +34,17 @@ class App(customtkinter.CTk):
         self.txt_incremento = customtkinter.CTkEntry(master=self)
         self.txt_incremento.grid(row=1, column=1)
         
-        self.btn_mostrar = customtkinter.CTkButton(master=self, text="Mostrar", command=self.btn_mostrar_on_click)
+        self.btn_mostrar = customtkinter.CTkButton(master=self, text="Calcular", command=self.btn_mostrar_on_click)
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
 
     def btn_mostrar_on_click(self):
-        pass
+        sueldo_texto = self.txt_sueldo.get()
+        incremento_texto = self.txt_incremento.get()
+        sueldo_numero = float(sueldo_texto)
+        incremento_numero = float(incremento_texto)
+        alert("Sueldo", sueldo_numero * incremento_numero) / 100
+
         
     
 if __name__ == "__main__":

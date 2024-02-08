@@ -27,8 +27,10 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
         
+       respuesta_prompt = prompt ("Mensaje", "¿Esto es un prompt?")
+       
+       alert(respuesta_prompt)
         
     
 if __name__ == "__main__":

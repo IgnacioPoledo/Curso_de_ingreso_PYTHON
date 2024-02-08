@@ -34,8 +34,8 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
-                
+        contenido_de_la_caja_de_texto = self.txt_nombre.get()
+        alert ("Contenido de la caja de texto", contenido_de_la_caja_de_texto)
     
 if __name__ == "__main__":
     app = App()

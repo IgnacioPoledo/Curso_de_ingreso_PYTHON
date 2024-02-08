@@ -14,6 +14,13 @@ Enunciado:
 Al presionar el  botón, se debe mostrar un mensaje como el siguiente "Esto no anda, funciona".
 '''
 
+#TIPOS DE DATOS: string entre "", boolean es True o False, None, float, entero.
+#El = es el operador de asignación 
+#edad = 23   
+#SIEMPRE escribir las variables en snake case
+#edad_promedio = 23.2 
+#Alert Question Prompt
+
 class App(customtkinter.CTk):
 
     def __init__(self):
@@ -26,7 +33,8 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
-        pass
+        
+        alert("Mensaje", "Esto no anda, funciona")
 
 
 if __name__ == "__main__":
