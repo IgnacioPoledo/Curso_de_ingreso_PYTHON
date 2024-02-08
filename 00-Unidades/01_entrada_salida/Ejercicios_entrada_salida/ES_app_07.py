@@ -54,7 +54,7 @@ class App(customtkinter.CTk):
         operador_a_numero = int(operador_a_texto)
         operador_b_numero = int(operador_b_texto)
         resultado_de_la_suma = operador_a_numero + operador_b_numero
-        alert ("Resultado de la sume", resultado_de_la_suma)
+        alert ("Resultado de la suma", resultado_de_la_suma)
 
     def btn_restar_on_click(self):
         operador_a_texto = self.txt_operador_a.get()
@@ -70,7 +70,7 @@ class App(customtkinter.CTk):
         operador_a_numero = int(operador_a_texto)
         operador_b_numero = int(operador_b_texto)
         resultado_de_la_multiplicacion = operador_a_numero * operador_b_numero
-        alert ("Resultado de la multiplicacion", resultado_de_la_multiplicacion)
+        alert ("Resultado de la multiplicación", resultado_de_la_multiplicacion)
 
     def btn_dividir_on_click(self):
         operador_a_texto = self.txt_operador_a.get()
@@ -78,7 +78,7 @@ class App(customtkinter.CTk):
         operador_a_numero = int(operador_a_texto)
         operador_b_numero = int(operador_b_texto)
         resultado_de_la_divicion = operador_a_numero / operador_b_numero
-        alert ("Resultado de la divicion", resultado_de_la_divicion)
+        alert ("Resultado de la divición", resultado_de_la_divicion)
         
 if __name__ == "__main__":
     app = App()
